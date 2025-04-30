@@ -12,19 +12,18 @@
     <div id="login-screen">
         <h1>Bem-vindo ao DoneIt</h1>
 
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-        <input type="email" id="email" placeholder="Digite seu e-mail" required>
-
-        <button onclick="login()">Entrar</button>
+        <input type="text" id="nome" aria-label="Digite seu nome" placeholder="Digite seu nome" required>
+        <input type="email" id="email" aria-label="Digite seu e-mail" placeholder="Digite seu e-mail" required>
+        <button aria-label="Entrar no sistema" onclick="login()">Entrar</button>
     </div>
 
     <!-- Tela da To-Do List -->
     <div id="todo-screen" style="display:none;">
-        <h1>To-Do List</h1>
-        <input type="text" id="nova-tarefa" placeholder="Nova tarefa" required>
-        <button onclick="addTask()">Adicionar</button>
+        <h1 id="titulo-todo">To-Do List</h1>
+        <input type="text" id="nova-tarefa" aria-label="Nova tarefa" placeholder="Nova tarefa" required>
+        <button class="botao" aria-label="Adicionar tarefa" onclick="addTask()">Adicionar</button>
         <ul id="task-list"></ul>
+        <button class="botao" aria-label="Logout" onclick="logout()">Logout</button>
     </div>
 
     <!-- LINK JS -->
